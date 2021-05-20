@@ -1,0 +1,98 @@
+body {
+  background-color: #eceff1;
+}
+
+.main-txt {
+  color: black;
+  opacity: 0.75;
+  text-align: left;
+}
+
+.novie-img-lg {
+  position: absolute;
+
+  z-index: -1;
+  width: 100%;
+}
+
+.movie-img-sm {
+  position: absolute;
+  width: 16vw;
+  height: 25vw;
+  top: -9vw;
+  left: 8vw;
+  z-index: 1;
+  box-shadow: -9px 13px 31px -1px rgba(51, 50, 50, 0.65);
+  -webkit-box-shadow: -9px 13px 31px -1px rgba(51, 50, 50, 0.65);
+  -moz-box-shadow: -9px 13px 31px -1px rgba(51, 50, 50, 0.65);
+}
+
+.hero {
+  width: 100%;
+  height: 35vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: bisque;
+  display: flex;
+}
+
+.col-md-9.info {
+  padding: 2vw;
+  display: flex;
+  font-size: 1.2vw;
+  align-items: flex-end;
+  justify-content: flex-start;
+  color: floralwhite;
+}
+.movie-info-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2vw;
+}
+.movie-info-text h2 {
+  font-size: 2vw;
+}
+.plot {
+  padding: 2vw;
+  min-height: 400px;
+}
+
+.img-hero {
+  width: 100%;
+  height: 100%;
+}
+
+.movie-banner {
+  height: 30vw;
+}
+.providers {
+  display: flex;
+  align-items: flex-end;
+}
+
+.col-md-3.info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.col-md-9.mt-3.mb-3.plot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 700px) {
+  .movie-img-sm {
+    display: none;
+
+    position: absolute;
+    width: 16vw;
+    height: 25vw;
+    top: -26vw;
+    left: 8vw;
+    z-index: 1;
+    box-shadow: -9px 13px 31px -1px rgba(51, 50, 50, 0.65);
+    -webkit-box-shadow: -9px 13px 31px -1px rgba(51, 50, 50, 0.65);
+    -moz-box-shadow: -9px 13px 31px -1px rgba(51, 50, 50, 0.65);
+  }
+}

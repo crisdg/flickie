@@ -1,0 +1,19 @@
+.navbar.navbar-expand-md {
+  background-color: #ffab00;
+}
+
+.navbar-brand {
+  color: #fafafa;
+  font-weight: bold;
+}
+
+.btn-outline-success {
+  color: #fafafa;
+  background-color: #ffab00;
+  border-color: #c67c00;
+}
+
+.btn-outline-success:hover {
+  background-color: #c67c00;
+  border-color: #c67c00;
+}
