@@ -6,7 +6,7 @@ function similarCard(props) {
   return (
     <div className="col-6 col-md-3 mt-2 mb-3">
       <div class="card similar-card">
-        <Link to="/">
+        <Link to={"/movie-page/" + props.id}>
           <img
             src={"https://www.themoviedb.org/t/p/w500" + props.pic}
             class="card-img-top similar-img"

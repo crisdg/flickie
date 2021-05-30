@@ -20,7 +20,7 @@ function MovieDetails() {
 
   useEffect(() => {
     consultarAPI();
-  }, []);
+  }, [id]);
 
   const consultarAPI = () => {
     clienteAxios

@@ -27,7 +27,9 @@ function Similar(props) {
           <Carousel.Item>
             <div className="row" key={index}>
               {item.map((chunk, i) => {
-                return <SimilarCard pic={chunk.poster_path} key={i} />;
+                return (
+                  <SimilarCard pic={chunk.poster_path} key={i} id={chunk.id} />
+                );
               })}
             </div>
           </Carousel.Item>
