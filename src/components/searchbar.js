@@ -3,13 +3,13 @@ function SearchBar(props) {
   return (
     <div className="navbar navbar-expand-md">
       <div className="contianer-fluid">
-        <a class="navbar-brand" href="/">
+        <a className="navbar-brand" href="/">
           Flickie
         </a>
       </div>
-      <form class="d-flex">
+      <form className="d-flex">
         <input
-          class="form-control me-2"
+          className="form-control me-2"
           type="search"
           placeholder="Search"
           aria-label="Search"

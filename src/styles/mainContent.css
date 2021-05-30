@@ -81,6 +81,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
 @media (max-width: 700px) {
   .movie-img-sm {
     display: none;

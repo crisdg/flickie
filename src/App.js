@@ -26,9 +26,7 @@ function App() {
         });
     };
     consultarTrends();
-  }, [apiKey]);
-
-  console.log(consultaTrends);
+  }, []);
 
   return (
     <Fragment>

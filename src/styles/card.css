@@ -14,3 +14,13 @@
 .card-body {
   height: 50px;
 }
+
+.card.similar-card {
+  height: 15vw;
+  width: 15vw;
+}
+
+.card-img-top.similar-img {
+  height: 15vw;
+  width: 15 vw;
+}

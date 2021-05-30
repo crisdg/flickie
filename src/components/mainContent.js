@@ -6,10 +6,10 @@ function MainContent(props) {
   return (
     <div className="container main">
       <Carousel indicators={false}>
-        {props.trends.map((item) => {
+        {props.trends.map((item, i) => {
           return (
-            <Carousel.Item>
-              <div className="movie-banner">
+            <Carousel.Item key={i}>
+              <div className="movie-banner" key={i}>
                 <img
                   className="img-fluid img-hero"
                   src={
@@ -24,12 +24,13 @@ function MainContent(props) {
       </Carousel>
 
       <div className="row">
-        {props.trends.map((item) => {
+        {props.trends.map((item, i) => {
           return (
             <MovieCard
               title={item.title}
               pic={"https://www.themoviedb.org/t/p/original" + item.poster_path}
               movieId={item.id}
+              i={i}
             />
           );
         })}
