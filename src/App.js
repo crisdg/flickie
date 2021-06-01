@@ -9,6 +9,7 @@ import HomePage from "./homePage";
 import MoviePage from "./moviePage";
 import SearchBar from "./components/searchbar";
 import Footer from "./components/footer";
+import SearchPage from "./searchPage";
 
 function App() {
   const apiKey = process.env.REACT_APP_API_KEY;
@@ -30,8 +31,8 @@ function App() {
 
   return (
     <Fragment>
-      <SearchBar />
       <Router>
+        <SearchBar />
         <Switch>
           <Route
             exact
@@ -39,6 +40,11 @@ function App() {
             component={() => <HomePage trends={consultaTrends} />}
           />
           <Route exact path="/movie-page/:id" component={() => <MoviePage />} />
+          <Route
+            exact
+            path="/search/:search"
+            component={() => <SearchPage />}
+          />
         </Switch>
       </Router>
       <Footer />
